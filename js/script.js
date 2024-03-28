@@ -23,9 +23,13 @@ createApp({
             } else {
                 this.activeIndexSlide = this.slides.length - 1;
             }
+        },
+        goToSlide(index){
+            this.activeIndexSlide = index;
         }
     },
     mounted(){
-        setInterval(this.nextSlide, 3000)
+        setInterval(this.nextSlide, 3000);
+        
     }
 }).mount('#app');
